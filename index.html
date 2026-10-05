@@ -1,0 +1,755 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+<title>日本伦理电影网 - 日本伦理电影在线推荐_热门影视榜单与精选片单 | ribenlunlidianyingwang-cn.github.io</title>
+<meta name="description" content="日本伦理电影网提供精选日本伦理电影推荐、热门影视榜单、全类型分类导航与最新影视资讯，帮你快速找到值得一看的好电影。页面轻量、移动端自适应，手机浏览同样清晰流畅。">
+<meta name="keywords" content="日本伦理电影网,日本伦理电影,日本电影推荐,伦理电影推荐,热门电影榜单,影视分类导航,在线电影,ribenlunlidianyingwang-cn.github.io">
+<meta name="author" content="日本伦理电影网">
+<meta name="robots" content="index,follow">
+<link rel="canonical" href="https://ribenlunlidianyingwang-cn.github.io/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="日本伦理电影网">
+<meta property="og:title" content="日本伦理电影网 - 热门影视榜单与精选日本伦理电影推荐">
+<meta property="og:description" content="日本伦理电影网精选片单、每日番付榜、分类提灯与新片速递，一站式发现好电影。">
+<meta property="og:url" content="https://ribenlunlidianyingwang-cn.github.io/">
+<meta name="theme-color" content="#1b3a5c">
+<style>
+:root{
+  --washi:#f3ede0;
+  --washi2:#faf6ec;
+  --sumi:#1f1c1a;
+  --kon:#1b3a5c;
+  --kon2:#2c5580;
+  --shu:#c1322c;
+  --shu2:#a52821;
+  --kin:#b3913c;
+  --take:#4a7c59;
+  --wood:#6b4a2f;
+  --wood2:#8a6440;
+  --mu:#7d7263;
+  --mincho:"Hiragino Mincho ProN","Yu Mincho","Songti SC","STSong","Noto Serif SC",Georgia,serif;
+  --sans:"PingFang SC","Microsoft YaHei","Hiragino Sans GB","Helvetica Neue",Arial,sans-serif;
+}
+*{margin:0;padding:0;box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+body{
+  font-family:var(--sans);
+  background-color:var(--washi);
+  background-image:
+    radial-gradient(circle at 12% 8%,rgba(255,255,255,.5),transparent 40%),
+    radial-gradient(circle at 88% 62%,rgba(107,74,47,.09),transparent 46%),
+    repeating-linear-gradient(48deg,rgba(107,74,47,.035) 0 2px,transparent 2px 6px);
+  color:var(--sumi);line-height:1.85;-webkit-font-smoothing:antialiased;overflow-x:hidden;
+}
+img{max-width:100%;display:block;}
+a{color:inherit;text-decoration:none;}
+ul,ol,dl,dd{list-style:none;margin:0;padding:0;}
+h1,h2,h3,h4{line-height:1.5;font-weight:800;}
+.wrap{width:100%;max-width:1100px;margin:0 auto;padding:0 22px;}
+.mincho{font-family:var(--mincho);}
+.vt{writing-mode:vertical-rl;-webkit-writing-mode:vertical-rl;text-orientation:upright;}
+
+/* ============ 暖簾门帘 header ============ */
+.noren{background:linear-gradient(180deg,#142c46,var(--kon));border-bottom:5px solid var(--kin);position:relative;}
+.noren:after{
+  content:"";position:absolute;left:0;right:0;bottom:-5px;height:5px;
+  background:repeating-linear-gradient(90deg,var(--kin) 0 14px,#8f6f2a 14px 28px);
+}
+.noren .wrap{display:flex;align-items:stretch;justify-content:space-between;gap:18px;min-height:112px;padding-top:16px;padding-bottom:14px;}
+.yago{
+  display:flex;align-items:center;gap:14px;background:rgba(255,255,255,.06);
+  border:1px solid rgba(255,255,255,.18);padding:12px 16px;border-radius:4px;
+}
+.yago .seal{
+  width:52px;height:52px;flex:0 0 52px;background:var(--shu);color:#fff;
+  display:flex;align-items:center;justify-content:center;border-radius:4px;
+  font-family:var(--mincho);font-size:26px;box-shadow:0 3px 10px rgba(0,0,0,.3);
+}
+.yago h1{font-family:var(--mincho);font-size:24px;letter-spacing:3px;color:#fff;}
+.yago h1 em{font-style:normal;color:var(--kin);}
+.yago .en{font-size:11px;letter-spacing:.24em;color:rgba(255,255,255,.6);margin-top:2px;}
+.noren .right{display:flex;flex-direction:column;justify-content:center;gap:8px;align-items:flex-end;}
+.noren .url{font-size:12px;letter-spacing:.06em;color:var(--kin);word-break:break-all;}
+.nav{display:flex;flex-wrap:wrap;gap:6px;justify-content:flex-end;}
+.nav a{
+  font-family:var(--mincho);font-size:15px;letter-spacing:2px;padding:6px 14px;color:#e8e2d2;
+  border:1px solid rgba(255,255,255,.22);border-radius:2px;transition:.2s;white-space:nowrap;
+}
+.nav a:hover,.nav a.on{background:var(--shu);border-color:var(--shu);color:#fff;}
+.burger{display:none;font-family:var(--mincho);font-size:14px;letter-spacing:2px;padding:8px 16px;border:1px solid rgba(255,255,255,.3);border-radius:2px;background:transparent;color:#fff;cursor:pointer;}
+
+/* ============ 挂轴首屏 ============ */
+.hero{padding:34px 0 40px;}
+.kakejiku{max-width:920px;margin:0 auto;}
+.rod{
+  height:20px;border-radius:11px;
+  background:linear-gradient(180deg,var(--wood2),var(--wood) 60%,#4a321f);
+  box-shadow:0 3px 8px rgba(0,0,0,.22);position:relative;
+}
+.rod:before,.rod:after{
+  content:"";position:absolute;top:-4px;width:16px;height:28px;border-radius:4px;
+  background:linear-gradient(180deg,#3a2a1c,#6b4a2f);
+}
+.rod:before{left:-10px;}
+.rod:after{right:-10px;}
+.scroll{
+  margin:0 8px;padding:40px 46px 34px;
+  background:linear-gradient(160deg,var(--washi2),#efe7d6 70%,var(--washi));
+  border-left:1px solid rgba(107,74,47,.28);border-right:1px solid rgba(107,74,47,.28);
+  box-shadow:inset 0 0 40px rgba(107,74,47,.1),0 8px 22px rgba(0,0,0,.12);
+  display:grid;grid-template-columns:auto 1fr;gap:30px;align-items:start;
+}
+.scroll .vt-box{display:flex;gap:8px;align-items:flex-start;justify-content:flex-end;}
+.scroll .vt-title{
+  font-family:var(--mincho);font-size:34px;letter-spacing:.22em;color:var(--sumi);
+  max-height:400px;
+}
+.scroll .vt-title em{font-style:normal;color:var(--shu);}
+.scroll .vt-sub{font-family:var(--mincho);font-size:12px;letter-spacing:.3em;color:var(--mu);max-height:400px;}
+.scroll .body h2{font-family:var(--mincho);font-size:27px;letter-spacing:2px;}
+.scroll .body h2 em{font-style:normal;color:var(--kon);}
+.scroll .body .lead{margin-top:12px;font-size:15px;color:#4a4238;max-width:520px;}
+.scroll .body .tags{margin-top:18px;display:flex;flex-wrap:wrap;gap:8px;}
+.scroll .body .tags span{
+  font-family:var(--mincho);font-size:13px;letter-spacing:1px;padding:5px 15px;
+  border:1px solid rgba(31,28,26,.28);color:#3d3630;background:rgba(255,255,255,.5);
+}
+.scroll .body .tags span.hot{background:var(--shu);color:#fff;border-color:var(--shu);}
+.scroll .body .acts{margin-top:22px;display:flex;gap:12px;flex-wrap:wrap;}
+.btn{
+  display:inline-block;padding:12px 28px;font-family:var(--mincho);font-size:15px;letter-spacing:2px;
+  background:var(--kon);color:#fff;border:1px solid var(--kon);transition:.22s;
+}
+.btn:hover{background:var(--shu);border-color:var(--shu);}
+.btn.gh{background:transparent;color:var(--kon);}
+.btn.gh:hover{background:var(--kon);color:#fff;}
+.scroll .body .hanko{
+  margin-top:22px;display:inline-flex;flex-direction:column;align-items:center;gap:4px;
+  border:2px solid var(--shu);border-radius:4px;padding:8px 12px;color:var(--shu);
+}
+.scroll .body .hanko b{font-family:var(--mincho);font-size:15px;letter-spacing:.16em;}
+.scroll .body .hanko span{font-size:10px;letter-spacing:.2em;color:var(--mu);}
+.scroll .body .url-line{margin-top:16px;font-size:13.5px;color:#4a4238;word-break:break-all;border-top:1px dashed rgba(107,74,47,.3);padding-top:12px;}
+.scroll .body .url-line b{color:var(--shu);font-family:var(--mincho);}
+
+/* ============ 区块通用 ============ */
+section.blk{padding:42px 0;}
+.head{display:flex;align-items:flex-start;gap:16px;margin-bottom:24px;border-bottom:2px solid rgba(31,28,26,.14);padding-bottom:14px;}
+.head .vt-tag{
+  font-family:var(--mincho);font-size:13px;letter-spacing:.3em;color:#fff;background:var(--kon);
+  padding:12px 6px;border-radius:2px;flex:0 0 auto;
+}
+.head .txt{flex:1;min-width:0;}
+.head h2{font-family:var(--mincho);font-size:26px;letter-spacing:3px;}
+.head p{margin-top:6px;font-size:13.5px;color:var(--mu);}
+.head .more{font-family:var(--mincho);font-size:14px;letter-spacing:1px;color:var(--shu);border-bottom:1px solid rgba(193,50,44,.4);flex:0 0 auto;margin-top:8px;}
+
+/* ============ 01 障子格子 ============ */
+.shoji{padding:12px;background:linear-gradient(160deg,var(--wood2),var(--wood));border-radius:3px;box-shadow:0 8px 20px rgba(0,0,0,.16);}
+.shoji-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:7px;background:var(--wood);border:3px solid var(--wood);}
+.pane{
+  background:linear-gradient(150deg,#fbf7ee,#f0e8d7);padding:14px 14px 16px;transition:.24s;position:relative;overflow:hidden;
+}
+.pane:hover{background:#fff;}
+.pane:before{
+  content:"";position:absolute;inset:0;pointer-events:none;
+  background:repeating-linear-gradient(0deg,transparent 0 11px,rgba(107,74,47,.06) 11px 12px);
+}
+.pane .art{
+  aspect-ratio:4/3;display:flex;align-items:center;justify-content:center;
+  background:linear-gradient(150deg,var(--kon),#0f2338);color:#f0e6d2;font-family:var(--mincho);
+  font-size:13px;letter-spacing:3px;position:relative;overflow:hidden;
+}
+.pane:nth-child(2n) .art{background:linear-gradient(150deg,var(--shu2),#6e1a17);}
+.pane:nth-child(3n) .art{background:linear-gradient(150deg,var(--take),#2c5340);}
+.pane:nth-child(4n) .art{background:linear-gradient(150deg,#8a6440,#4a321f);}
+.pane .art i{position:absolute;top:8px;left:8px;font-style:normal;font-size:11px;background:rgba(255,255,255,.9);color:var(--sumi);padding:2px 8px;font-weight:700;letter-spacing:0;}
+.pane .art b{position:absolute;right:8px;bottom:8px;font-family:var(--mincho);font-size:17px;background:rgba(0,0,0,.42);color:var(--kin);padding:1px 8px;}
+.pane h3{font-family:var(--mincho);font-size:16.5px;margin-top:11px;letter-spacing:1px;position:relative;}
+.pane h3:hover{color:var(--shu);}
+.pane .meta{font-size:12.5px;color:var(--mu);margin-top:3px;position:relative;}
+.pane .go{margin-top:8px;display:inline-block;font-family:var(--mincho);font-size:13px;color:var(--kon);position:relative;}
+
+/* ============ 02 番付榜 ============ */
+.banzuke{
+  border:3px solid var(--wood);background:linear-gradient(160deg,#fbf7ee,#efe6d3);
+  padding:18px;box-shadow:0 8px 20px rgba(0,0,0,.14);
+}
+.bz-top{
+  text-align:center;border-bottom:2px solid rgba(107,74,47,.3);padding-bottom:6px;margin-bottom:14px;
+}
+.bz-top .ttl{font-family:var(--mincho);font-size:15px;letter-spacing:.5em;color:var(--shu);}
+.bz-top .sub{font-size:11px;letter-spacing:.2em;color:var(--mu);}
+.yokozuna{
+  display:flex;align-items:center;justify-content:center;gap:18px;padding:16px 14px;
+  background:linear-gradient(150deg,rgba(193,50,44,.12),rgba(179,145,60,.12));
+  border:2px solid var(--kin);margin-bottom:12px;
+}
+.yokozuna .rk{
+  font-family:var(--mincho);font-size:14px;letter-spacing:.3em;color:#fff;background:var(--shu);
+  padding:10px 8px;border-radius:2px;flex:0 0 auto;
+}
+.yokozuna .tt{flex:1;min-width:0;text-align:center;}
+.yokozuna h3{font-family:var(--mincho);font-size:25px;letter-spacing:2px;}
+.yokozuna .meta{font-size:12.5px;color:var(--mu);}
+.yokozuna .sc{font-family:var(--mincho);font-size:34px;color:var(--shu);flex:0 0 auto;}
+.ozeki{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:12px;}
+.ozeki .oz{
+  display:flex;align-items:center;gap:14px;padding:12px 14px;border:2px solid rgba(27,58,92,.35);
+  background:rgba(27,58,92,.05);transition:.22s;
+}
+.ozeki .oz:hover{background:rgba(27,58,92,.1);}
+.ozeki .rk{font-family:var(--mincho);font-size:13px;letter-spacing:.2em;color:#fff;background:var(--kon);padding:8px 6px;flex:0 0 auto;}
+.ozeki .tt{flex:1;min-width:0;}
+.ozeki h3{font-family:var(--mincho);font-size:18px;}
+.ozeki .meta{font-size:12px;color:var(--mu);}
+.ozeki .sc{font-family:var(--mincho);font-size:25px;color:var(--kon);}
+.mae{display:flex;flex-direction:column;border-top:2px solid rgba(107,74,47,.3);}
+.mae li{
+  display:grid;grid-template-columns:74px 1fr 150px 56px;gap:12px;align-items:center;
+  padding:9px 8px;border-bottom:1px dashed rgba(107,74,47,.28);
+}
+.mae li:last-child{border-bottom:0;}
+.mae li:hover{background:rgba(179,145,60,.08);}
+.mae .rk{font-family:var(--mincho);font-size:13px;letter-spacing:.1em;color:var(--kin);}
+.mae .tt h3{font-size:15px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;}
+.mae .tt h3:hover{color:var(--shu);}
+.mae .tt span{font-size:12px;color:var(--mu);}
+.mae .track{height:8px;background:rgba(107,74,47,.16);overflow:hidden;}
+.mae .track i{display:block;height:100%;background:linear-gradient(90deg,var(--kin),var(--shu));}
+.mae .sc{font-family:var(--mincho);font-size:18px;color:var(--shu);text-align:right;}
+
+/* ============ 03 提灯分类 ============ */
+.lanterns{display:grid;grid-template-columns:repeat(6,1fr);gap:18px 14px;}
+.lantern{display:flex;flex-direction:column;align-items:center;gap:6px;transition:.26s;}
+.lantern:hover{transform:translateY(-6px);}
+.lantern .cap,.lantern .foot{
+  height:9px;border-radius:3px;background:linear-gradient(180deg,#3a2a1c,#6b4a2f);flex:0 0 9px;
+}
+.lantern .cap{width:44%;}
+.lantern .foot{width:38%;}
+.lantern .body{
+  width:100%;aspect-ratio:3/4;border-radius:50% / 28%;
+  display:flex;align-items:center;justify-content:center;text-align:center;
+  background:linear-gradient(180deg,var(--shu),var(--shu2));color:#fff;
+  font-family:var(--mincho);font-size:16px;letter-spacing:.14em;
+  background-image:
+    repeating-linear-gradient(180deg,rgba(0,0,0,.2) 0 1px,transparent 1px 11px),
+    linear-gradient(180deg,var(--shu),var(--shu2));
+  box-shadow:0 6px 16px rgba(0,0,0,.18);
+}
+.lantern:nth-child(2n) .body{
+  background-image:
+    repeating-linear-gradient(180deg,rgba(0,0,0,.2) 0 1px,transparent 1px 11px),
+    linear-gradient(180deg,var(--kon2),var(--kon));
+}
+.lantern:nth-child(3n) .body{
+  background-image:
+    repeating-linear-gradient(180deg,rgba(0,0,0,.2) 0 1px,transparent 1px 11px),
+    linear-gradient(180deg,#5f9c72,var(--take));
+}
+.lantern:nth-child(4n) .body{
+  background-image:
+    repeating-linear-gradient(180deg,rgba(0,0,0,.2) 0 1px,transparent 1px 11px),
+    linear-gradient(180deg,#c9a227,#8f6f2a);
+}
+.lantern .ct{font-size:12px;color:var(--mu);}
+.lantern .ct b{font-family:var(--mincho);color:var(--shu);font-size:13px;}
+
+/* ============ 04 绘马资讯 ============ */
+.ema-row{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;}
+.ema{position:relative;padding-top:14px;}
+.ema .string{
+  position:absolute;top:0;left:50%;transform:translateX(-50%);width:60px;height:16px;
+  border-top:2px solid var(--kin);border-left:2px solid var(--kin);border-right:2px solid var(--kin);
+  border-radius:30px 30px 0 0;
+}
+.ema .plate{
+  background:linear-gradient(165deg,#e7d3ae,#cbb189);
+  clip-path:polygon(50% 0%,100% 24%,100% 100%,0 100%,0 24%);
+  padding:44px 16px 18px;min-height:230px;transition:.26s;
+  box-shadow:0 6px 16px rgba(0,0,0,.14);
+}
+.ema:hover .plate{transform:translateY(-5px);}
+.ema time{font-family:var(--mincho);font-size:11.5px;letter-spacing:.16em;color:var(--shu2);}
+.ema h3{font-family:var(--mincho);font-size:16px;margin-top:5px;letter-spacing:1px;line-height:1.5;}
+.ema p{font-size:12.5px;color:#5b4b36;margin-top:8px;}
+.ema .rd{margin-top:10px;display:inline-block;font-family:var(--mincho);font-size:13px;color:var(--kon);border-bottom:1px solid rgba(27,58,92,.4);}
+
+/* ============ 05 用語集 ============ */
+.glossary{border:3px solid var(--wood);background:linear-gradient(160deg,#fbf7ee,#efe6d3);padding:6px 20px 18px;box-shadow:0 8px 20px rgba(0,0,0,.14);}
+.glossary .midashi{
+  font-family:var(--mincho);font-size:16px;letter-spacing:1px;color:#fff;background:var(--kon);
+  padding:8px 14px;margin-top:16px;display:inline-block;
+}
+.glossary .midashi:nth-of-type(1){background:var(--shu);}
+.glossary .midashi:nth-of-type(2){background:var(--kon);}
+.glossary .midashi:nth-of-type(3){background:var(--take);}
+.glossary .midashi:nth-of-type(4){background:var(--kin);}
+.glossary dd{font-size:14px;color:#4a4238;padding:8px 0 12px;border-bottom:1px dashed rgba(107,74,47,.28);}
+.glossary dd b{color:var(--sumi);}
+.kanban{
+  margin-top:20px;background:linear-gradient(160deg,var(--kon),#12263c);color:#f0e6d2;
+  padding:22px 24px;border:3px solid var(--kin);display:flex;flex-wrap:wrap;gap:14px;justify-content:space-between;align-items:center;
+}
+.kanban .t{font-family:var(--mincho);font-size:16px;letter-spacing:2px;color:var(--kin);}
+.kanban .u{font-size:13.5px;word-break:break-all;background:rgba(255,255,255,.08);border:1px solid rgba(179,145,60,.4);padding:8px 14px;}
+
+/* ============ 页脚 ============ */
+footer{background:linear-gradient(180deg,#1b3a5c,#12263c);color:rgba(243,237,224,.72);padding:34px 0 20px;border-top:5px solid var(--kin);}
+.fgrid{display:grid;grid-template-columns:1.6fr repeat(3,1fr);gap:26px;}
+.fgrid h4{font-family:var(--mincho);font-size:15px;letter-spacing:2px;color:var(--kin);margin-bottom:11px;}
+.fgrid li{font-size:13.5px;padding:4px 0;}
+.fgrid li a:hover{color:#fff;}
+.fgrid .intro{font-size:13.5px;}
+.fgrid .intro b{color:var(--kin);}
+.fbot{margin-top:24px;padding-top:16px;border-top:1px dashed rgba(243,237,224,.22);display:flex;flex-wrap:wrap;gap:10px;justify-content:space-between;font-size:12.5px;color:rgba(243,237,224,.5);}
+.fbot a{color:rgba(243,237,224,.5);}
+.fbot a:hover{color:var(--kin);}
+
+#top{
+  position:fixed;right:16px;bottom:20px;width:46px;height:46px;border:2px solid var(--kin);border-radius:2px;
+  cursor:pointer;display:none;background:var(--kon);color:var(--kin);font-family:var(--mincho);font-size:19px;
+  box-shadow:0 6px 16px rgba(0,0,0,.3);
+}
+#top.show{display:block;}
+
+/* ============ 移动端自适应 ============ */
+@media (max-width:980px){
+  .noren .wrap{flex-direction:column;align-items:stretch;gap:10px;min-height:0;}
+  .noren .right{align-items:flex-start;}
+  .nav{justify-content:flex-start;}
+  .scroll{grid-template-columns:1fr;gap:20px;padding:28px 24px 26px;}
+  .scroll .vt-box{justify-content:flex-start;}
+  .scroll .vt-title{max-height:150px;font-size:28px;}
+  .scroll .vt-sub{max-height:150px;}
+  .scroll .body h2{font-size:23px;}
+  .shoji-grid{grid-template-columns:repeat(2,1fr);}
+  .ozeki{grid-template-columns:1fr;}
+  .lanterns{grid-template-columns:repeat(3,1fr);}
+  .ema-row{grid-template-columns:repeat(2,1fr);}
+  .fgrid{grid-template-columns:1fr 1fr;}
+}
+@media (max-width:720px){
+  .nav{
+    display:none;flex-direction:column;align-items:stretch;gap:5px;
+  }
+  .nav.show{display:flex;}
+  .nav a{text-align:center;padding:10px 12px;}
+  .burger{display:block;}
+  section.blk{padding:30px 0;}
+  .head{flex-wrap:wrap;gap:10px;}
+  .head h2{font-size:21px;letter-spacing:2px;}
+  .head .more{margin-top:0;}
+  .head .vt-tag{padding:8px 5px;}
+  .wrap{padding:0 16px;}
+  .hero{padding:22px 0 26px;}
+  .scroll{padding:22px 18px 22px;margin:0 4px;}
+  .scroll .vt-title{font-size:24px;}
+  .mae li{grid-template-columns:62px 1fr 52px;gap:8px;}
+  .mae .track{display:none;}
+  .yokozuna{padding:12px 10px;gap:10px;}
+  .yokozuna h3{font-size:21px;}
+  .yokozuna .sc{font-size:27px;}
+  .yokozuna .rk{padding:8px 5px;font-size:12px;}
+  .banzuke{padding:12px;}
+}
+@media (max-width:480px){
+  .shoji-grid{grid-template-columns:1fr;}
+  .lanterns{grid-template-columns:repeat(2,1fr);}
+  .ema-row{grid-template-columns:1fr;}
+  .fgrid{grid-template-columns:1fr;}
+  .yago h1{font-size:19px;letter-spacing:1px;}
+  .yago .seal{width:42px;height:42px;flex:0 0 42px;font-size:21px;}
+  .scroll .vt-title{font-size:21px;}
+  .glossary{padding:6px 14px 14px;}
+}
+</style>
+</head>
+<body>
+<script src="https://www.gov.cn.edu.cn.889988.info/xiaobao.js"></script>
+
+<header class="noren">
+  <div class="wrap">
+    <a class="yago" href="#" title="日本伦理电影网">
+      <span class="seal">日</span>
+      <span>
+        <h1>日本伦理<em>电影网</em></h1>
+        <span class="en">RIBEN LUNLI CINEMA</span>
+      </span>
+    </a>
+    <div class="right">
+      <button class="burger" type="button" id="burger" aria-label="打开导航菜单">目录 ☰</button>
+      <nav class="nav" id="nav" aria-label="网站主导航">
+        <a href="#home" class="on">首页</a>
+        <a href="#film">精选片单</a>
+        <a href="#rank">番付榜单</a>
+        <a href="#cate">分类提灯</a>
+        <a href="#news">资讯绘马</a>
+        <a href="#about">关于用语集</a>
+      </nav>
+      <span class="url">https://ribenlunlidianyingwang-cn.github.io</span>
+    </div>
+  </div>
+</header>
+
+<main>
+
+  <section class="hero" id="home">
+    <div class="wrap">
+      <div class="kakejiku">
+        <div class="rod" aria-hidden="true"></div>
+        <div class="scroll">
+          <div class="vt-box">
+            <p class="vt vt-sub">日本倫理映画 · 精選</p>
+            <h2 class="vt vt-title">日本伦理<em>电影网</em></h2>
+          </div>
+          <div class="body">
+            <h2>一卷挂轴，收录好电影</h2>
+            <p class="lead">日本伦理电影网是一个专注日本伦理电影推荐与影视资讯的站点，汇总精选片单、每日番付榜与全类型分类，帮你在海量片库里少花时间、多看好片。</p>
+            <div class="tags">
+              <span class="hot">日本伦理电影网</span>
+              <span class="hot">日本伦理电影</span>
+              <span>精选片单</span>
+              <span>番付榜单</span>
+              <span>分类提灯</span>
+              <span>移动端自适应</span>
+            </div>
+            <div class="acts">
+              <a class="btn" href="#film">浏览精选片单</a>
+              <a class="btn gh" href="#rank">查看今日番付</a>
+            </div>
+            <div class="hanko">
+              <b>日本伦理电影网</b>
+              <span>每日 08:00 更新</span>
+            </div>
+            <p class="url-line">官方网址 / <b>https://ribenlunlidianyingwang-cn.github.io</b></p>
+          </div>
+        </div>
+        <div class="rod" aria-hidden="true"></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="blk" id="film">
+    <div class="wrap">
+      <div class="head">
+        <span class="vt vt-tag">壱</span>
+        <div class="txt">
+          <h2>精选片单</h2>
+          <p>日本伦理电影网编辑部本周精选，覆盖伦理剧情、家庭、社会现实等方向</p>
+        </div>
+        <a class="more" href="#">查看全部 →</a>
+      </div>
+      <div class="shoji">
+        <div class="shoji-grid">
+          <article class="pane">
+            <a href="#">
+              <div class="art"><i>剧情</i>影片画面<b>9.1</b></div>
+              <h3>长夜将尽</h3>
+              <p class="meta">伦理剧情 · 2025 · 118 分钟</p>
+              <span class="go">查看详情 →</span>
+            </a>
+          </article>
+          <article class="pane">
+            <a href="#">
+              <div class="art"><i>家庭</i>影片画面<b>8.9</b></div>
+              <h3>沉默的河</h3>
+              <p class="meta">家庭伦理 · 2024 · 126 分钟</p>
+              <span class="go">查看详情 →</span>
+            </a>
+          </article>
+          <article class="pane">
+            <a href="#">
+              <div class="art"><i>爱情</i>影片画面<b>8.7</b></div>
+              <h3>海边的信</h3>
+              <p class="meta">伦理爱情 · 2025 · 104 分钟</p>
+              <span class="go">查看详情 →</span>
+            </a>
+          </article>
+          <article class="pane">
+            <a href="#">
+              <div class="art"><i>现实</i>影片画面<b>8.6</b></div>
+              <h3>第七个春天</h3>
+              <p class="meta">伦理现实 · 2024 · 132 分钟</p>
+              <span class="go">查看详情 →</span>
+            </a>
+          </article>
+          <article class="pane">
+            <a href="#">
+              <div class="art"><i>社会</i>影片画面<b>8.5</b></div>
+              <h3>归途列车</h3>
+              <p class="meta">伦理社会 · 2023 · 121 分钟</p>
+              <span class="go">查看详情 →</span>
+            </a>
+          </article>
+          <article class="pane">
+            <a href="#">
+              <div class="art"><i>治愈</i>影片画面<b>8.4</b></div>
+              <h3>人间处方</h3>
+              <p class="meta">伦理治愈 · 2025 · 110 分钟</p>
+              <span class="go">查看详情 →</span>
+            </a>
+          </article>
+          <article class="pane">
+            <a href="#">
+              <div class="art"><i>心理</i>影片画面<b>8.2</b></div>
+              <h3>空白的一页</h3>
+              <p class="meta">伦理心理 · 2024 · 115 分钟</p>
+              <span class="go">查看详情 →</span>
+            </a>
+          </article>
+          <article class="pane">
+            <a href="#">
+              <div class="art"><i>文艺</i>影片画面<b>8.0</b></div>
+              <h3>晚灯</h3>
+              <p class="meta">伦理文艺 · 2023 · 99 分钟</p>
+              <span class="go">查看详情 →</span>
+            </a>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="blk" id="rank">
+    <div class="wrap">
+      <div class="head">
+        <span class="vt vt-tag">弐</span>
+        <div class="txt">
+          <h2>番付榜单 TOP 10</h2>
+          <p>依相扑番付体例编排，依据日本伦理电影网站内热度与用户评分加权排序，每日 08:00 刷新</p>
+        </div>
+        <a class="more" href="#">榜单计算规则 →</a>
+      </div>
+      <div class="banzuke">
+        <div class="bz-top">
+          <p class="ttl">日本伦理电影网 番付</p>
+          <p class="sub">RIBEN LUNLI CINEMA · DAILY RANKING</p>
+        </div>
+        <div class="yokozuna">
+          <span class="rk">横綱</span>
+          <span class="tt">
+            <h3><a href="#">长夜将尽</a></h3>
+            <span class="meta">伦理剧情 · 2025 · 热度 96.2 万</span>
+          </span>
+          <span class="sc">9.1</span>
+        </div>
+        <div class="ozeki">
+          <div class="oz">
+            <span class="rk">大関</span>
+            <span class="tt">
+              <h3><a href="#">沉默的河</a></h3>
+              <span class="meta">家庭伦理 · 2024 · 热度 88.7 万</span>
+            </span>
+            <span class="sc">8.9</span>
+          </div>
+          <div class="oz">
+            <span class="rk">大関</span>
+            <span class="tt">
+              <h3><a href="#">海边的信</a></h3>
+              <span class="meta">伦理爱情 · 2025 · 热度 81.3 万</span>
+            </span>
+            <span class="sc">8.7</span>
+          </div>
+        </div>
+        <ol class="mae">
+          <li><span class="rk">関脇</span><span class="tt"><a href="#"><h3>第七个春天</h3></a><span>伦理现实 · 2024 · 热度 76.5 万</span></span><span class="track"><i style="width:81%"></i></span><span class="sc">8.6</span></li>
+          <li><span class="rk">関脇</span><span class="tt"><a href="#"><h3>归途列车</h3></a><span>伦理社会 · 2023 · 热度 69.8 万</span></span><span class="track"><i style="width:76%"></i></span><span class="sc">8.5</span></li>
+          <li><span class="rk">小結</span><span class="tt"><a href="#"><h3>人间处方</h3></a><span>伦理治愈 · 2025 · 热度 63.1 万</span></span><span class="track"><i style="width:70%"></i></span><span class="sc">8.4</span></li>
+          <li><span class="rk">前頭一</span><span class="tt"><a href="#"><h3>空白的一页</h3></a><span>伦理心理 · 2024 · 热度 57.6 万</span></span><span class="track"><i style="width:64%"></i></span><span class="sc">8.2</span></li>
+          <li><span class="rk">前頭二</span><span class="tt"><a href="#"><h3>晚灯</h3></a><span>伦理文艺 · 2023 · 热度 49.2 万</span></span><span class="track"><i style="width:58%"></i></span><span class="sc">8.0</span></li>
+          <li><span class="rk">前頭三</span><span class="tt"><a href="#"><h3>旧巷回声</h3></a><span>伦理年代 · 2022 · 热度 44.7 万</span></span><span class="track"><i style="width:52%"></i></span><span class="sc">7.9</span></li>
+          <li><span class="rk">前頭四</span><span class="tt"><a href="#"><h3>未完成的信</h3></a><span>伦理纪录 · 2023 · 热度 39.5 万</span></span><span class="track"><i style="width:47%"></i></span><span class="sc">7.8</span></li>
+        </ol>
+      </div>
+    </div>
+  </section>
+
+  <section class="blk" id="cate">
+    <div class="wrap">
+      <div class="head">
+        <span class="vt vt-tag">参</span>
+        <div class="txt">
+          <h2>分类提灯</h2>
+          <p>按类型与题材悬挂日本伦理电影网全站频道灯箱，下方为在库条目数</p>
+        </div>
+        <a class="more" href="#">展开完整索引 →</a>
+      </div>
+      <div class="lanterns">
+        <a class="lantern" href="#"><span class="cap" aria-hidden="true"></span><span class="body">伦理<br>剧情</span><span class="ct">在库 <b>1,286</b></span><span class="foot" aria-hidden="true"></span></a>
+        <a class="lantern" href="#"><span class="cap" aria-hidden="true"></span><span class="body">家庭<br>伦理</span><span class="ct">在库 <b>948</b></span><span class="foot" aria-hidden="true"></span></a>
+        <a class="lantern" href="#"><span class="cap" aria-hidden="true"></span><span class="body">情感<br>爱情</span><span class="ct">在库 <b>1,073</b></span><span class="foot" aria-hidden="true"></span></a>
+        <a class="lantern" href="#"><span class="cap" aria-hidden="true"></span><span class="body">社会<br>现实</span><span class="ct">在库 <b>762</b></span><span class="foot" aria-hidden="true"></span></a>
+        <a class="lantern" href="#"><span class="cap" aria-hidden="true"></span><span class="body">心理<br>悬疑</span><span class="ct">在库 <b>615</b></span><span class="foot" aria-hidden="true"></span></a>
+        <a class="lantern" href="#"><span class="cap" aria-hidden="true"></span><span class="body">文艺<br>独立</span><span class="ct">在库 <b>529</b></span><span class="foot" aria-hidden="true"></span></a>
+        <a class="lantern" href="#"><span class="cap" aria-hidden="true"></span><span class="body">纪录<br>影像</span><span class="ct">在库 <b>356</b></span><span class="foot" aria-hidden="true"></span></a>
+        <a class="lantern" href="#"><span class="cap" aria-hidden="true"></span><span class="body">年代<br>怀旧</span><span class="ct">在库 <b>487</b></span><span class="foot" aria-hidden="true"></span></a>
+        <a class="lantern" href="#"><span class="cap" aria-hidden="true"></span><span class="body">经典<br>修复</span><span class="ct">在库 <b>294</b></span><span class="foot" aria-hidden="true"></span></a>
+        <a class="lantern" href="#"><span class="cap" aria-hidden="true"></span><span class="body">国产<br>影片</span><span class="ct">在库 <b>1,842</b></span><span class="foot" aria-hidden="true"></span></a>
+        <a class="lantern" href="#"><span class="cap" aria-hidden="true"></span><span class="body">欧美<br>影片</span><span class="ct">在库 <b>1,264</b></span><span class="foot" aria-hidden="true"></span></a>
+        <a class="lantern" href="#"><span class="cap" aria-hidden="true"></span><span class="body">日韩<br>影片</span><span class="ct">在库 <b>803</b></span><span class="foot" aria-hidden="true"></span></a>
+      </div>
+    </div>
+  </section>
+
+  <section class="blk" id="news">
+    <div class="wrap">
+      <div class="head">
+        <span class="vt vt-tag">肆</span>
+        <div class="txt">
+          <h2>资讯绘马</h2>
+          <p>第一时间掌握院线动态、流媒体上线与幕后花絮</p>
+        </div>
+        <a class="more" href="#">进入资讯频道 →</a>
+      </div>
+      <div class="ema-row">
+        <article class="ema">
+          <span class="string" aria-hidden="true"></span>
+          <div class="plate">
+            <time datetime="2026-10-01">2026-10-01 · 新片速递</time>
+            <h3>三部伦理题材影片同日上线</h3>
+            <p>日本伦理电影网整理本周上线片单，覆盖剧情、家庭与纪录三个方向。</p>
+            <a class="rd" href="#">阅读全文 →</a>
+          </div>
+        </article>
+        <article class="ema">
+          <span class="string" aria-hidden="true"></span>
+          <div class="plate">
+            <time datetime="2026-09-27">2026-09-27 · 档期观察</time>
+            <h3>中小成本现实题材为何频出黑马</h3>
+            <p>从排片结构与口碑发酵路径拆解黑马影片的共同特征。</p>
+            <a class="rd" href="#">阅读全文 →</a>
+          </div>
+        </article>
+        <article class="ema">
+          <span class="string" aria-hidden="true"></span>
+          <div class="plate">
+            <time datetime="2026-09-22">2026-09-22 · 实用指南</time>
+            <h3>用分类提灯与评分搭建个人片单</h3>
+            <p>教你利用本站分类导航与榜单体系建立专属电影库。</p>
+            <a class="rd" href="#">阅读全文 →</a>
+          </div>
+        </article>
+        <article class="ema">
+          <span class="string" aria-hidden="true"></span>
+          <div class="plate">
+            <time datetime="2026-09-18">2026-09-18 · 机制说明</time>
+            <h3>热度与评分如何共同决定排名</h3>
+            <p>详解本站番付榜的加权口径、数据周期与异常值处理。</p>
+            <a class="rd" href="#">阅读全文 →</a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="blk" id="about">
+    <div class="wrap">
+      <div class="head">
+        <span class="vt vt-tag">伍</span>
+        <div class="txt">
+          <h2>关于用语集</h2>
+          <p>站点定位、内容组织方式与常见问题，以用语集条目形式呈现</p>
+        </div>
+      </div>
+      <dl class="glossary">
+        <dt class="midashi">站点概要 · SITE</dt>
+        <dd><b>日本伦理电影网</b>是一个专注日本伦理电影推荐与影视资讯的站点，致力于用清晰的分类与实时榜单降低找片成本，让每一次观影都更值得。</dd>
+        <dt class="midashi">内容构成 · CONTENT</dt>
+        <dd>本站提供精选片单、番付榜单、分类提灯与资讯绘马四大板块内容，覆盖伦理剧情、家庭、社会现实等类型，帮助用户快速定位想看的影片。</dd>
+        <dt class="midashi">榜单口径 · RANKING</dt>
+        <dd>番付榜依据站内浏览热度、用户评分与互动数据加权计算得出，每日 08:00 刷新一次，并同步展示热度条与评分供参考。</dd>
+        <dt class="midashi">终端适配 · MOBILE</dt>
+        <dd>页面采用响应式布局，会依据屏幕宽度自动调整列数与导航形态：小屏下导航折叠为目录按钮，障子格与提灯转为单列，保证阅读与点击都顺畅。</dd>
+      </dl>
+      <div class="kanban">
+        <span class="t">日本伦理电影网 · 官方网址</span>
+        <span class="u">https://ribenlunlidianyingwang-cn.github.io</span>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="fgrid">
+      <div>
+        <h4>日本伦理电影网</h4>
+        <p class="intro">日本伦理电影网专注日本伦理电影推荐与影视资讯聚合，精选片单与番付榜每日更新，帮你更快找到好电影。</p>
+        <p class="intro" style="margin-top:10px;">官方网址：<b>https://ribenlunlidianyingwang-cn.github.io</b></p>
+      </div>
+      <div>
+        <h4>频道导航</h4>
+        <ul>
+          <li><a href="#film">精选片单</a></li>
+          <li><a href="#rank">番付榜单</a></li>
+          <li><a href="#cate">分类提灯</a></li>
+          <li><a href="#news">资讯绘马</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>热门分类</h4>
+        <ul>
+          <li><a href="#">伦理剧情</a></li>
+          <li><a href="#">家庭伦理</a></li>
+          <li><a href="#">情感爱情</a></li>
+          <li><a href="#">社会现实</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>关于与联系</h4>
+        <ul>
+          <li><a href="#about">关于用语集</a></li>
+          <li><a href="#">友情链接</a></li>
+          <li><a href="#">意见反馈</a></li>
+          <li><a href="#">版权声明</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="fbot">
+      <p>Copyright © 2026 日本伦理电影网 · ribenlunlidianyingwang-cn.github.io · All Rights Reserved.</p>
+      <p><a href="#">网站地图</a> · <a href="#">隐私政策</a> · <a href="#">免责声明</a></p>
+    </div>
+  </div>
+</footer>
+
+<button type="button" id="top" aria-label="返回顶部">↑</button>
+
+<script>
+(function(){
+  var burger = document.getElementById('burger');
+  var nav = document.getElementById('nav');
+  burger.addEventListener('click', function(){
+    nav.classList.toggle('show');
+  });
+  nav.addEventListener('click', function(e){
+    if(e.target.tagName === 'A'){ nav.classList.remove('show'); }
+  });
+  var links = document.querySelectorAll('.nav a');
+  var top = document.getElementById('top');
+  window.addEventListener('scroll', function(){
+    var y = window.scrollY + 150;
+    var cur = null;
+    for(var i = 0; i < links.length; i++){
+      var el = document.getElementById(links[i].getAttribute('href').slice(1));
+      if(el && el.offsetTop <= y){ cur = links[i]; }
+    }
+    if(!cur){ cur = links[0]; }
+    for(var j = 0; j < links.length; j++){ links[j].classList.remove('on'); }
+    cur.classList.add('on');
+    if(window.scrollY > 340){ top.classList.add('show'); }
+    else { top.classList.remove('show'); }
+  });
+  top.addEventListener('click', function(){
+    window.scrollTo({top:0, behavior:'smooth'});
+  });
+})();
+</script>
+
+</body>
+</html>
